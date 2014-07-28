@@ -1,0 +1,19 @@
+# mount point	fstype		device			[device2]
+
+/boot		emmc		/dev/bootimg
+#/cache	ext4		/dev/block/mmcblk0p8
+/cache		ext4		/dev/block/mmcblk0p8	flags=display="Cache";storage;wipeingui;backup=1
+/data		ext4		/dev/block/mmcblk0p9
+/recovery	emmc		/dev/recovery
+#/sdcard	datamedia	/dev/null
+/sdcard	vfat		/dev/block/mmcblk1	/dev/block/mmcblk1p1
+#/system	ext4		/dev/block/mmcblk0p7
+/system	ext4		/dev/block/mmcblk0p7	flags=display="System";storage;wipeingui;backup=1
+#/custpack	ext4		/dev/block/mmcblk0p5
+/custpack	ext4		/dev/block/mmcblk0p5	flags=display="Custpack";storage;wipeingui;backup=1
+#/mobile_info	ext4		/dev/block/mmcblk0p6
+#/protect_f	ext4		/dev/block/mmcblk0p2
+#/protect_s	ext4		/dev/block/mmcblk0p3
+#/usb-otg	vfat		/dev/block/sda1		/dev/block/sda
+/usb-otg	vfat		/dev/block/sda1		/dev/block/sda	flags=display="Usb-otg";storage;wipeingui;removable
+/nvram		emmc		/dev/nvram		flags=display="Nvram(IMEI)";backup=1
