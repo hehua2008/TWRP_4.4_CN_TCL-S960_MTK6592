@@ -1,0 +1,1 @@
+若为MTK平台，已提供 1.pl、2.pl、mkbootimg 三个MTK打包recovery所需的工具文件，编译前请将此三个文件复制或者移动到cm源码根目录。若不是MTK平台，请将BoardConfigVendor.mk的BOARD_CUSTOM_BOOTIMG_MK这一行注释掉。
